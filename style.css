@@ -1,0 +1,168 @@
+:root {
+    --bgColor: #caf0f8;
+    --appColor: #74d9eb;
+    --mainFont: #023E8A;
+    --secondaryFont: #0077B6;
+    --titleHover: #ffffff;
+    --inputBg: #ADE8F4;
+    --inputBorder: #0096C7;
+    --inputBorderFocus: #ADE8F4;
+    --inputBgFocus: #90E0EF;
+}
+
+.darkTheme {
+    --bgColor: #041a1d;
+    --appColor: #000505;
+    --mainFont: #000000;
+    --secondaryFont: #106896;
+    --titleHover: #725e5e;
+    --inputBg: #0d2125;
+    --inputBorder: #291652;
+    --inputBorderFocus: #312d19;
+    --inputBgFocus: #000e10;
+}
+
+
+div{
+    display: flex;
+    flex-direction: column;
+    font-family: Bahnschrift;
+}
+
+body{
+    background-color: var(--bgColor);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#square{
+    width: 50%;
+    background-color: var(--appColor);
+    margin-top: 2%; 
+    border-radius: 25px;
+}
+
+.title{
+    color: var(--mainFont);
+    font-size: 3.5vw;
+    font-weight: bold;
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+b {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+b:hover {
+    color: var(--titleHover);
+}
+
+.inputNames{
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.inputs{
+    flex-direction: row;
+    justify-content: center;
+    height: 15%;
+}
+
+.inputName{
+    font-size: 3vw;
+    font-weight: bolder;
+    margin-left: 11.5vw;
+    cursor: wait;
+    transition: 0.5s;
+    color: var(--secondaryFont);
+}
+
+.inputName:hover{
+    color: var(--mainFont);
+}
+
+.inputNameA{
+    margin-left: 0;
+}
+
+.input{
+    margin-left: 10%;
+    width: 15.5%;
+    height: 40%;
+    border-radius: 5px;
+    border-width: 0.4vh;
+    border-color: var(--inputBorder);
+    font-size: 2vw;
+    text-align: center;
+    background-color: var(--inputBg);
+    color: var(--inputBorder);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.input:focus{
+    outline: none;
+    border-color: var(--inputBorderFocus);
+    background-color: var(--inputBgFocus);
+    color: var(--secondaryFont);
+}
+
+#a{
+    margin-left: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.numbers {
+    font-size: 4vw;
+    font-weight: bold;
+    flex-direction: row;
+    width: 100%;
+    cursor: context-menu;
+}
+
+.answer {
+    margin-top: 1%;
+    font-size: 2.5vw;
+    color: var(--mainFont);
+}
+
+.answerColumn {
+    width: 40%;
+    flex-direction: column;
+}
+
+.leftColumn {
+    margin-left: 15%;
+}
+
+.direction {
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.4vw;
+    cursor: context-menu;
+    color: var(--mainFont);
+    justify-content: top;
+    margin-block-start: 0;
+    margin-top: 1%;
+}

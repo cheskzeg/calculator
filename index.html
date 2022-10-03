@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <title>Goofy aah calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <div id="square">
+        <div class="title">
+            <b>Kalkulator y=ax²+bx+c</b>
+        </div>
+
+        <div class="inputNames">
+            <div class="inputName inputNameA">A</div>
+            <div class="inputName">B</div>
+            <div class="inputName">C</div>
+        </div>
+
+        <div class="inputs">
+            <input type="number" id="a" class="input" v-model="a">
+            <input type="number" id="b" class="input" v-model="b">
+            <input type="number" id="c" class="input" v-model="c">
+        </div>
+
+        <div class="numbers">
+            <div class="answerColumn leftColumn">
+                <div class="answer">Δ = {{ delta }}</div>
+                <div class="answer">p = {{ p }}</div>
+                <div class="answer">q = {{ q }}</div>
+            </div>
+            <div class="answerColumn">
+                <div class="answer">W={{ "("+p+";"+q+")" }}</div>
+                <div class="answer">x₁ = {{ x1 }}</div>
+                <div class="answer">x₂ = {{ x2 }}</div>
+            </div>
+        </div>
+        <div class=" direction "><h2>{{ direction }}</h2></div>
+
+        <!-- <button class="input" id="changeTheme" v-on:click="changeTheme">Change Theme</button> -->
+    </div>
+
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
+
